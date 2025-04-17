@@ -855,10 +855,10 @@ RectTransform:
   m_Father: {fileID: 1766441189}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 32}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 381.25, y: -22.5}
+  m_SizeDelta: {x: 247.5, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &963194225
 GameObject:
@@ -1075,6 +1075,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1010077865}
   - component: {fileID: 1010077864}
+  - component: {fileID: 1010077866}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -1111,6 +1112,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1010077866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010077863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 149237616, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useDefaultGlobalVariables: 1
+  globalVariables: {fileID: 0}
+  overwriteMethodProvider: 0
+  overwrittenMethodProvider: {fileID: 0}
+  startOn:
+    instanceId: 0
+    referencingMode: 0
+    lowId: 0
+    highId: 0
+  pauseOn: 4
+  ignoreInvalidBranches: 1
+  continuouslyRecalculateBranches: 0
+  continouslyRecalculateInterval: 1
 --- !u!1 &1052361335
 GameObject:
   m_ObjectHideFlags: 0
@@ -1869,7 +1895,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1715526082
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2286,10 +2312,10 @@ RectTransform:
   m_Father: {fileID: 1766441189}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 32}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 128.75, y: -22.5}
+  m_SizeDelta: {x: 247.5, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1501243327172165913
 PrefabInstance:
@@ -2305,6 +2331,14 @@ PrefabInstance:
     - target: {fileID: -1470013768916780344, guid: 07ebd1ba22b961b4ea502feba7173b88, type: 3}
       propertyPath: dialogueLine
       value: Hi. I'm a green box!
+      objectReference: {fileID: 0}
+    - target: {fileID: 783976039105804980, guid: 07ebd1ba22b961b4ea502feba7173b88, type: 3}
+      propertyPath: reference.lowId
+      value: 701
+      objectReference: {fileID: 0}
+    - target: {fileID: 783976039105804980, guid: 07ebd1ba22b961b4ea502feba7173b88, type: 3}
+      propertyPath: reference.highId
+      value: 16777216
       objectReference: {fileID: 0}
     - target: {fileID: 1501243327548134320, guid: 07ebd1ba22b961b4ea502feba7173b88, type: 3}
       propertyPath: m_Enabled
