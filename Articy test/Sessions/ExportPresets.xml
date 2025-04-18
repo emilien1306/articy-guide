@@ -1,0 +1,26 @@
+<ExportPresets LastType="DocxExport">
+  <Preset DisplayName="" Type="XlsxForReimport">
+    <ExportSettings Type="XlsxForReimport">
+      <Filename>C:\Users\demil\Documents\LI1_D1_050425_5 test.xlsx</Filename>
+      <SortObjectsBy>DisplayName</SortObjectsBy>
+      <SelectedProperties/>
+      <AutoOpenFile>1</AutoOpenFile>
+      <ExportQueries>1</ExportQueries>
+      <MarkupTextFormat>Plain</MarkupTextFormat>
+    </ExportSettings>
+  </Preset>
+  <Preset DisplayName="" Type="Unity3DExport">
+    <ExportSettings Type="Unity3DExport">
+      <Filename>D:\Import Unity test\articy_UnityImporterTutorial_START\Assets\LI1_D1_050425_5 test.articyu3d</Filename>
+      <CustomSettings>
+        <Option Name="set_Localization" Value="False"/>
+        <Option Name="set_TextFormatter" Value="Unity"/>
+        <Option Name="set_IncludedNodes" Value="Settings, Project, GlobalVariables, ObjectDefinitions, Packages, ScriptMethods, Hierarchy, Assets"/>
+      </CustomSettings>
+      <PackageStates>
+        <State Id="72057594037928194" Enabled="1"/>
+      </PackageStates>
+      <SelectedRuleSet>72057594037928191</SelectedRuleSet>
+    </ExportSettings>
+  </Preset>
+</ExportPresets>
