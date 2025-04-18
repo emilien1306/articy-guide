@@ -6,11 +6,10 @@ using Articy.Unity;
 public class PlayerController : MonoBehaviour
 {
     private float speed = 15f;
-    private bool isNearNPC = false;
 
     private Rigidbody playerRB;
     private DialogueManager dialogueManager;
-    private ArticyObject articyObject;
+    private ArticyObject availableDialogue;
  
     void Start()
     {
@@ -42,9 +41,9 @@ public class PlayerController : MonoBehaviour
     void PlayerInteraction()
     {
         // Key option to start dialogue when near NPC
-        if (Input.GetKeyDown(KeyCode.Space) && isNearNPC)
+        if (Input.GetKeyDown(KeyCode.Space) && availableDialogue)
         {
-            dialogueManager.StartDialogue(articyObject);
+            dialogueManager.StartDialogue(availableDialogue);
         }
 
         // Key option to abort dialogue
@@ -69,13 +68,13 @@ public class PlayerController : MonoBehaviour
     // Trigger Enter/Exit used to determine if interaction with NPC is possible
     void OnTriggerEnter(Collider aOther)
     {
-        isNearNPC = true;
-        articyObject = aOther.GetComponent<ArticyReference>().reference.GetObject();
+        
+        availableDialogue = aOther.GetComponent<ArticyReference>().reference.GetObject();
 
     }
 
     void OnTriggerExit(Collider aOther)
     {
-        isNearNPC = false;
+        
     }
 }

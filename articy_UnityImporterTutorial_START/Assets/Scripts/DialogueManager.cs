@@ -49,6 +49,9 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         {
             dialogueText.text = objectWithText.Text;
         }
+
+        var objectWithSpeaker = aObject as IObjectWithSpeaker; 
+
     }
 
     public void OnBranchesUpdated(IList<Branch> aBranches)
